@@ -24,6 +24,11 @@ built around a slow, expensive, non-deterministic consumer. Idempotency keyed on
 content rather than id, backpressure left readable as consumer lag, retries that
 cannot stall a partition. Runs on `docker compose up` with no API key.
 
+**[nestjs-outbox](https://github.com/sparkYJO1/nestjs-outbox)** — the
+transactional outbox pulled out of it as a package. At-least-once with a
+deduplication window, and a test asserting the duplicate that gets through
+after the TTL rather than a comment hoping you do not notice.
+
 ---
 
 BSc Computer Science, taught in English, University of Pretoria.
