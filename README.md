@@ -1,36 +1,21 @@
 ### John Yoon
 
-Backend engineer near Seoul. I write the services and run the Kubernetes they
-live on — four applications plus the Redpanda, Redis, database and cron
-workloads behind them, with a five-person team and no dedicated infrastructure
-engineer.
+Backend engineer and tech lead in Seoul. I build TypeScript services on Node.js and NestJS and own the Kubernetes, Terraform and AWS infrastructure under them, on a five-person team with no dedicated infrastructure engineer. I took a national health screening platform from zero to production.
 
-The work I like most is the part nobody sees: pulling hard-coded domain logic
-out into data-driven rule systems, so changing a rule stops needing a deploy —
-and stops needing an engineer.
+I build with Claude Code every day, and I'm turning our team's whole workflow into a shared Claude Code plugin, from planning through verification, Jira tickets and docs.
 
-I build with AI agents daily and 0→1: project inception, CI/CD and deployment,
-not autocomplete. Where that shows up in a repo here, the decision documents
-record what an agent proposed and I rejected, because supervising one and
-following one are different jobs.
-
-**Stack** — TypeScript · NestJS · Node.js · PostgreSQL · Redis · Kafka
-(Redpanda) · Docker · Kubernetes · AWS
+**Stack:** TypeScript · NestJS · Node.js · PostgreSQL · Redis · Kafka (Redpanda) · Docker · Kubernetes · AWS · Terraform · Argo CD
 
 ---
 
-**[signalpipe](https://github.com/sparkYJO1/signalpipe)** — an ingest pipeline
-built around a slow, expensive, non-deterministic consumer. Idempotency keyed on
-content rather than id, backpressure left readable as consumer lag, retries that
-cannot stall a partition. Runs on `docker compose up` with no API key.
+**Side projects** (the code is private, the apps are live)
 
-**[nestjs-outbox](https://github.com/sparkYJO1/nestjs-outbox)** — the
-transactional outbox pulled out of it as a package. At-least-once with a
-deduplication window, and a test asserting the duplicate that gets through
-after the TTL rather than a comment hoping you do not notice.
+- **[matchin](https://matchin-web-weld.vercel.app)**: dating app that matches on personality, not photos. Neo4j scores candidate pairs within 50 km and explains each match. NestJS API, Next.js web and a Flutter app in one monorepo.
+- **[politician validator](https://politician-validator.vercel.app)**: voter-facing app that sets each politician's promises against their bills and votes, with a source on every claim.
+- **[naartjie](https://naartjie.vercel.app)**: hyperlocal marketplace for South African neighbourhoods. PostGIS ranks listings by suburb and distance, and a listing goes live only after phone verification.
+- **med-kg** (demo on request): agentic healthcare platform for clinic workflows, from booking to billing, on synthetic data. One PostgreSQL database with pgvector holds both the operational data and the medical knowledge graph.
 
 ---
 
 BSc Computer Science, taught in English, University of Pretoria.
-[sparkj.yoon@gmail.com](mailto:sparkj.yoon@gmail.com) ·
-[LinkedIn](https://www.linkedin.com/in/jyoon93)
+[sparkj.yoon@gmail.com](mailto:sparkj.yoon@gmail.com) · [LinkedIn](https://www.linkedin.com/in/jyoon93)
